@@ -1,15 +1,20 @@
 K3s cluster creation:
 
 Step-1: (VM creation)
+
 Create three VMs (named as MasterNode, WorkerNode-1, WorkerNode-2)
 
-Step-2: 
+Step-2: (Install K3s cluster in MasterNode)
+
 (Download the binary) >> 
 wget https://github.com/k3s-io/k3s/releases/download/v1.23.5%2Bk3s1/k3s
+
 (Give Execute permissison) >> 
 chmod +x k3s
+
 (install k3s cluster) >> 
 sudo ./k3s server
+
 (Display the Master node token) >>
 cat /var/lib/rancher/k3s/server/node-token
 
