@@ -4,7 +4,7 @@ Step-1: Install K3S cluster in MasterNode.​
 
         wget https://github.com/k3s-io/k3s/releases/download/v1.23.5%2Bk3s1/k3s   # Download the binary
 
-        chmod +x k3s ​                                                            # Give Execute permissison  
+        chmod +x k3s ​                                                            # Give Executable permission  
 
         sudo ./k3s server​                                                        # Install K3s cluster in Master Node   
         
@@ -17,7 +17,7 @@ Step-2: (Join the worker-node-1 to MasterNode)
 
        wget https://github.com/k3s-io/k3s/releases/download/v1.23.5%2Bk3s1/k3s        # Download the binary
 
-       chmod +x k3s ​                                                                 # Give Execute permissison  
+       chmod +x k3s ​                                                                 # Give Executable permission  
        
        sudo ./k3s kubectl get nodes -o wide                                           # Check how many nodes got created
         
@@ -29,7 +29,7 @@ Step-3: (Join the worker-node-2 to MasterNode)
 
        wget https://github.com/k3s-io/k3s/releases/download/v1.23.5%2Bk3s1/k3s        # Download the binary
 
-       chmod +x k3s ​                                                                 # Give Execute permissison  
+       chmod +x k3s ​                                                                 # Give Executable permission  
        
        sudo ./k3s kubectl get nodes -o wide                                           # Check how many nodes got created
         
